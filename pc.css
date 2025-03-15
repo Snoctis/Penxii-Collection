@@ -1,0 +1,77 @@
+@font-face{
+    src:url(/tffont/PlaywriteNGModern-VariableFont_wght.ttf);
+    font-family: PlaywriteNGModern;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PlaywriteNGModern;
+}
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-card {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.356);
+    width: 280px;
+    transition: transform 0.3s;
+}
+
+.image-card:hover {
+    transform: scale(1.09);
+    cursor:pointer;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.image-title {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+@media screen and (max-width: 800px) {
+    .gallery {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+h1{
+    color:rgb(158, 184, 192)
+}
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.918);
+    color: rgb(156, 156, 156);
+}
+button{
+    border-radius: 5px;
+}
+footer a{
+    text-decoration: none;
+}
