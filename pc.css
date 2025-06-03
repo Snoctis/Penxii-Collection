@@ -1,13 +1,7 @@
-@font-face{
-    src:url(/tffont/PlaywriteNGModern-VariableFont_wght.ttf);
-    font-family: PlaywriteNGModern;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: PlaywriteNGModern;
 }
 
 body {
